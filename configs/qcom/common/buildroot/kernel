@@ -1,0 +1,25 @@
+BR2_LINUX_KERNEL=y
+BR2_LINUX_KERNEL_CUSTOM_TARBALL=y
+
+# tobetter odroid-5.15.y branch
+# BR2_LINUX_KERNEL_CUSTOM_TARBALL_LOCATION="https://github.com/tobetter/linux/archive/dee90c004c8a3d483c6060c1cef58455c3b0d6bd/linux-odroid-tb-5.15.26-r1.tar.gz"
+# BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_5_15=y
+
+# skiffos odroid-5.16.y branch: tobetter fork w/ xu4 support
+# skiff-odroid-5.16.y-6
+# BR2_LINUX_KERNEL_CUSTOM_TARBALL_LOCATION="$(call github,skiffos,linux,d1c91efcf9d062bfc635cb7b6f20d2268f4e8899)/linux-odroid-tb-skiffos-5.16.18-r1.tar.gz"
+# BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_5_16=y
+
+# skiffos odroid-5.16.y branch: tobetter fork w/ xu4 support
+# skiff-odroid-5.16.y-8
+BR2_LINUX_KERNEL_CUSTOM_TARBALL_LOCATION="$(call github,skiffos,linux,38b4d755c1d5d87acb01951a7769faa44bf30db1)/linux-odroid-tb-skiffos-5.16.19-r1.tar.gz"
+BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_5_16=y
+
+BR2_LINUX_KERNEL_USE_ARCH_DEFAULT_CONFIG=y
+BR2_KERNEL_HEADERS_AS_KERNEL=y
+
+# BR2_LINUX_KERNEL_INTREE_DTS_NAME is set in board-specific packages
+BR2_LINUX_KERNEL_DTS_SUPPORT=y
+BR2_LINUX_KERNEL_USE_INTREE_DTS=y
+BR2_LINUX_KERNEL_ZIMAGE=y
+BR2_LINUX_KERNEL_GZIP=y
